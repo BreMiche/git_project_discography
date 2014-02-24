@@ -21,31 +21,17 @@
     <![endif]-->
   </head>
   <body>
-  		<div id="audio-player" class="audio-player-wrapper" style="margin: 10px; text-align: center;">
-  			<div class="audio-player-image">
-  				<span class="audio-player-song-name"> </span>
-  			</div>
-			
-			<div class="audio-player-controls">
-				<span class="audio-player-progress">
-					<span class="audio-player-progress-bar"> </span> 
-					</span>
-			<span class="audio-player-button-wrappers">
-				<span class="glyphicon glyphicon-play"> </span>
-				<span class="glyphicon glyphicon-backward"> </span>
-				<span class="glyphicon glyphicon-pause"> </span>
-				<span class="glyphicon glyphicon-forward"> </span>
-			</span>
-			</div>
-			</div>
-		<audio controls
+  		<div style="margin: 10px; text-align: center;">
+  			
+		<audio ontimeupdate="updateTime()"
 			
 			<source src="_audio/metaphor_music/A Day by Atmosphere Supreme.ogg" type="audio/ogg" />
 			<source src="_audio/departure/01 - Nujabes feat. Shing02 - samurai champloo music record departure - 1. battlecry.ogg" type="audio/ogg" />
 			
 		</audio>
 		
-
+		
+	    
 
     <img id="logo"  src="_images/imgres-1.jpg" alt="nujabes logo" title="nujabes logo">
     <h1> Nujabes </h1>
@@ -71,10 +57,12 @@
 				</div>
 			</div>
 		</div>
+		</div> <!--main div-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="chrome-extension://bmagokdooijbeehmkpknfglimnifench/googleChrome.js"/>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
   </body>
 </html>
