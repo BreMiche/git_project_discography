@@ -7,11 +7,21 @@
     <title>Discography Website- Nujabes</title>
 
     <!-- Bootstrap -->
-    <link href="_css/bootstrap.min.css" rel="stylesheet">
-    <!-- CSS Reset -->
-    <link href="_css/normalize.css" rel="stylesheet">
+    
     <!-- My Styles -->
-    <link href="_css/custom.css" rel="stylesheet">
+    
+    <link href="_css/component.css" rel="stylesheet">
+    <link href="_css/default.css" rel="stylesheet">
+    <link href="_css/bootstrap.min.css" rel="stylesheet">
+    <line href="_css/custom.css" rel="stylesheet"></line>
+    
+    <!--Scripts-->
+    <script src="js/modernizr.custom.js"> </script>
+    
+    
+		
+    
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,9 +31,67 @@
     <![endif]-->
   </head>
   <body>
+  	<div class="demo-3">
+  	<header class="clearfix">
+  		<div class="main clearfix">
+  			<div class="column">
+  			
+  		<nav id="dl-menu" class= "dl-menuwrapper">
+  			<button class="dl-trigger">Open Menu </button>
+    		<ul class="dl-menu">
+    			<li><a href="#"> Home </a></li>
+    			<li><a href="#"> Discography </a>
+    				<ul class="dl-submenu">
+    					<li>
+    						<a href="#">Compilations</a>
+    					
+    							<ul class="dl-submenu">
+    								
+    								<li><a href="#">Hydeout Productions 1st Collection</a></li>
+    								<li><a href="#">Hydeout Productions 2nd Collection</a></li>
+    							</ul>
+    					</li>
+    						<li>
+    						<a href="#">Studio Albums</a>
+    						
+										<ul class="dl-submenu">
+											
+											<li><a href="#">Metaphorical Music</a></li>
+											<li><a href="#">Modal Soul</a></li>
+											<li><a href="#">Spiritual State</a></li>
+										</ul>
+    					</li>
+    					<li>
+							<a href="#">Samurai Champloo Soundtrack</a>
+								
+										<ul class="dl-submenu">
+											<li><a href="#">Departure</a></li>
+											<li><a href="#">Impression</a></li>
+										</ul>
+						</li>
+						</ul>
+					</li>
+    			<li><a href="#"> News </a></li>
+    			<li><a href="#"> Fans </a></li>
+    			<li><a href="#"> Resources </a></li>
+    			<li><a href="#"> Contact </a></li>
+    			
+    		</ul>
+    			</nav>
+    		</div> <!--column -->
+    	</div> <!--clearfix -->
+   </div> <!--container-->
+    	
+     
+    </header>
+    
+    
+    	
+    	
+    	
   		<div style="margin: 10px; text-align: center;">
   			
-		<audio ontimeupdate="updateTime()"
+		<audio>
 			
 			<source src="_audio/metaphor_music/A Day by Atmosphere Supreme.ogg" type="audio/ogg" />
 			<source src="_audio/departure/01 - Nujabes feat. Shing02 - samurai champloo music record departure - 1. battlecry.ogg" type="audio/ogg" />
@@ -35,34 +103,29 @@
 
     <img id="logo"  src="_images/imgres-1.jpg" alt="nujabes logo" title="nujabes logo">
     <h1> Nujabes </h1>
-    <nav class="navbar navbar-default " role="navigation">
-    
-    	<div>
-    		<ul class="nav nav-pills nav-stacked">
-    			<li class="active"><a href="#"> Home </a></li>
-    			<li><a href="#"> Discography </a></li>
-    			<li><a href="#"> News </a></li>
-    			<li><a href="#"> Fans </a></li>
-    			<li><a href="#"> Resources </a></li>
-    			<li><a href="#"> Contact </a></li>
-    			
-    			
-    		</ul>
-    	</div>
-    </nav>
+   
 		<div class="container">
 			<div id="footer">
 				<div class=" container">
-					<p class="text-muted"> <i class="icon-large icon-facebook"></i> <i class="icon-large icon-twitter"></i> &copy; Bre Miche</p>
+					<p class="text-muted"> <i class="icon-large icon-facebook"> </i> <i class="icon-large icon-twitter"> </i> &copy; Bre Miche</p>
 				</div>
 			</div>
 		</div>
 		</div> <!--main div-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.dlmenu.js"></script>
+    <script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu({
+					animationClasses : { classin : 'dl-animate-in-5', classout : 'dl-animate-out-5' }
+				});
+			});
+		</script>
+    
+    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="chrome-extension://bmagokdooijbeehmkpknfglimnifench/googleChrome.js"/>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
+		
+    
   </body>
 </html>
