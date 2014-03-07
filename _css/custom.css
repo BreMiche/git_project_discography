@@ -675,10 +675,9 @@ h1 {
 /* ====================================MEDIA QUERIES=============================*/
 
 
-@media (min-width: @screen-sm-min) {
-	#logo {
-		
-	}
+@media only screen (min-width: 768px)  and (max-width: 992px){
+	body{
+		background: url('../_images/reflection.jpg') no-repeat;
 	 }
 
 
