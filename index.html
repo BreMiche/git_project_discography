@@ -9,19 +9,31 @@
     <!-- Bootstrap -->
     
     <!-- My Styles -->
-    
-    <link href="_css/component.css" rel="stylesheet">
-    <link href="_css/default.css" rel="stylesheet">
     <link href="_css/bootstrap.min.css" rel="stylesheet">
-    <line href="_css/custom.css" rel="stylesheet"></line>
+    <link href="_css/component.css" rel="stylesheet">
+    <link href="_css/custom.css" rel="stylesheet">
+  	<link href="_css/audioplayer.css" rel="stylesheet">
+  	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    
     
     <!--Scripts-->
-    <script src="js/modernizr.custom.js"> </script>
     
-    
-		
-    
-    
+   <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"> </script>
+    <script type="text/javascript" src="js/modernizr.custom.js"> </script>
+ 	<script type="text/javascript" src="js/jquery.js"> </script>
+ 	<script type="text/javascript" src="js/audioplayer.js"></script>
+ 	<script>
+ 		$(function() {
+ 			$('audio').audioPlayer();
+ 		});
+ 		$( 'audio' ).audioPlayer(
+{
+    classPrefix: 'player', // default value: 'audioplayer'
+    strPlay: 'Play', // default value: 'Play'
+    strPause: 'Pause', // default value: 'Pause'
+    strVolume: 'Volume', // default value: 'Volume'
+});
+ 	</script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,10 +43,20 @@
     <![endif]-->
   </head>
   <body>
-  	<div class="demo-3">
+  	<div class="demo-5">
+  		<div id="wrapper">
+    	<audio controls="controls" preload="none"> 
+    		<source type="audio/mp3" src="_audio/metaphor_music/Beat Laments the World.mp3"> </source>
+    		<source type="audio/wav" src="_audio/metaphor_music/Beat Laments the World.wav"> </source>
+    		<source type="audio/ogg" src="_audio/metaphor_music/Beat Laments the World.ogg"> </source>
+    	</audio>
+    </div>
   	<header class="clearfix">
+  		
   		<div class="main clearfix">
+  			
   			<div class="column">
+  				
   			
   		<nav id="dl-menu" class= "dl-menuwrapper">
   			<button class="dl-trigger">Open Menu </button>
@@ -81,39 +103,41 @@
     		</div> <!--column -->
     	</div> <!--clearfix -->
    </div> <!--container-->
-    	
-     
+   
+   
     </header>
     
     
-    	
-    	
-    	
-  		<div style="margin: 10px; text-align: center;">
-  			
-		<audio>
-			
-			<source src="_audio/metaphor_music/A Day by Atmosphere Supreme.ogg" type="audio/ogg" />
-			<source src="_audio/departure/01 - Nujabes feat. Shing02 - samurai champloo music record departure - 1. battlecry.ogg" type="audio/ogg" />
-			
-		</audio>
-		
-		
-	    
+    <article id="main">	
 
     <img id="logo"  src="_images/imgres-1.jpg" alt="nujabes logo" title="nujabes logo">
     <h1> Nujabes </h1>
    
-		<div class="container">
+   </article>
+   
+		
+			
 			<div id="footer">
-				<div class=" container">
-					<p class="text-muted"> <i class="icon-large icon-facebook"> </i> <i class="icon-large icon-twitter"> </i> &copy; Bre Miche</p>
-				</div>
+				<div class="container">
+				  <a class="btn btn-primary" href="#"> <i class="fa fa-facebook-square fa-2x" >  </i></a>
+							
+						
+							<a class="btn btn-info " href="#"> <i class="fa fa-twitter-square fa-2x" >  </i></a>
+						
+						
+							<a class="btn btn-danger " href="#"> <i class="fa fa-google-plus fa-2x">  </i></a>
+			
+			
+					<p class="text-muted"> 
+						
+						
+					
+						 &copy; Site by Bre Miche. All music is the sole property of Hydeout Productions. Artwork is owned by their respective creators.</p>
 			</div>
-		</div>
+			</div>
 		</div> <!--main div-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
     <script src="js/jquery.dlmenu.js"></script>
     <script>
 			$(function() {
@@ -124,8 +148,9 @@
 		</script>
     
     
+    <script src="js/custom.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-		
+      
     
   </body>
 </html>

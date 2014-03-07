@@ -984,13 +984,13 @@ All this is done for any sub-level being entered.
 
 /* Demo 3 */
 .demo-3 .dl-menuwrapper button {
-	background: #08cbc4;
+	background: #C6970D;
 }
 
 .demo-3 .dl-menuwrapper button:hover,
 .demo-3 .dl-menuwrapper button.dl-active,
 .demo-3 .dl-menuwrapper ul {
-	background: #00b4ae;
+	background: #CFB52B;
 }
 
 /* Demo 4 */
