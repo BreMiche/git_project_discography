@@ -517,28 +517,7 @@ url('../_fonts/29FB7D_1_0.ttf') format('truetype');}
 	color: #89867e;
 }
 
-@media screen and (max-width: 46.0625em) {
 
-	.main {
-		padding: 0;
-	}
-
-	.column {
-		width: 100%;
-		min-width: auto;
-		min-height: auto;
-		padding: 3em 2em; 
-	}
-
-	.column p {
-		text-align: left;
-		font-size: 1.5em;
-	}
-
-	.column:nth-child(2) {
-		box-shadow: 0 -1px 0 rgba(0,0,0,0.1);
-		background-position: 90px 3em;
-	}
 
 /* ===================================SIDEBAR==================================*/
 /* ===================================MAINCONTENT==============================*/
@@ -664,24 +643,63 @@ h1 {
 	font-size: 4em;
 	color: #A991C3;
 /* +++++++++++++++++++++PAGES+++++++++++++++++++++*/
+
+.homeContent {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+
 /* ++++++++++++++++++++PLAYLISTS++++++++++++++++++*/
-
-
 
 /* ====================================FOOTER===================================*/
 .social {
 	padding-left: 25px;
 	padding-right: 18px;
 /* ====================================MEDIA QUERIES=============================*/
+@media screen and (max-width: 46.0625em) {
+
+	.main {
+		padding: 0;
+	}
+
+	.column {
+		width: 100%;
+		min-width: auto;
+		min-height: auto;
+		padding: 3em 2em; 
+	}
+
+	.column p {
+		text-align: left;
+		font-size: 1.5em;
+	}
+
+	.column:nth-child(2) {
+		box-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+		background-position: 90px 3em;
+	}
 
 
 @media only screen (min-width: 768px)  and (max-width: 992px){
-	body{
-		background: url('../_images/reflection.jpg') no-repeat;
-	 }
+	
+	html {
+   background: url("../_images/reflection.jpg") no-repeat scroll;
+	background-position: center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+	
 
+@media only screen (min-width: 992px) and (max-width: 1024px) {
+}
 
-
+@media only screen (max-width: 1680px) {
+}
 
 
 
