@@ -250,3 +250,11 @@
 	};
 
 } )( jQuery, window );
+
+function ignoreMenu(){
+	if (screen.width < 600) {
+		$("")
+	//
+}
+}
+
