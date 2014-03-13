@@ -685,12 +685,12 @@ h1 {
 
 @media screen (min-width: 769px)  and (max-width: 992px){
 	
-   background: url("../_images/reflection.jpg") no-repeat scroll;
 	background-position: center;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
+	body {
 }
 @media  screen (min-width: 993px) and (max-width: 1024px) {
 	
