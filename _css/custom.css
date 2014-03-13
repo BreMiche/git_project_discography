@@ -543,10 +543,12 @@ body, html { font-size: 100%; 	padding: 0; margin: 0;}
 	clear: both;
 }
 
+
 body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	color: #b1aea6;
 	background: #fffcf5;
+	min-height: 982px;
 }
 
 a {
@@ -652,7 +654,7 @@ h1 {
 
 
 /* ++++++++++++++++++++PLAYLISTS++++++++++++++++++*/
-{
+
 
 /* ====================================FOOTER===================================*/
 .social {
@@ -685,17 +687,25 @@ h1 {
 
 @media screen (min-width: 769px)  and (max-width: 992px){
 	
-	background-position: center;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	body {
+		background: url ('../_images/reflection.jpg') no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		min-height: 982px;
+		width: auto;
+	}
+	
+	
+	
 }
 @media  screen (min-width: 993px) and (max-width: 1024px) {
 	
+	
 }
 
+@media  screen (max-width: 1680px) {
 }
 
 
