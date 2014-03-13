@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Discography Website- Nujabes</title>
 
@@ -16,23 +16,12 @@
     
     
     <!--Scripts-->
+   <script src="js/jquery.js"></script>
+    <script src="js/audioplayer.js"></script>
+    	<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script><script src="js/bootstrap.min.js"></script>
     
-   <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"> </script>
-    <script type="text/javascript" src="js/modernizr.custom.js"> </script>
- 	<script type="text/javascript" src="js/jquery.js"> </script>
- 	<script type="text/javascript" src="js/audioplayer.js"></script>
- 	<script>
- 		$(function() {
- 			$('audio').audioPlayer();
- 		});
- 		$( 'audio' ).audioPlayer(
-{
-    classPrefix: 'player', // default value: 'audioplayer'
-    strPlay: 'Play', // default value: 'Play'
-    strPause: 'Pause', // default value: 'Pause'
-    strVolume: 'Volume', // default value: 'Volume'
-});
- 	</script>
+ 	
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,75 +33,87 @@
   <body>
   	
     
-  		<div id="wrapper">
-    	<audio controls="controls" preload="none"> 
-    		<source type="audio/mp3" src="_audio/metaphor_music/Beat Laments the World.mp3"> </source>
-    		<source type="audio/wav" src="_audio/metaphor_music/Beat Laments the World.wav"> </source>
-    		<source type="audio/ogg" src="_audio/metaphor_music/Beat Laments the World.ogg"> </source>
-    	</audio>
-    </div>
-  	<header class="clearfix">
+  	
   		
-  		<div class="main clearfix">
-  			
-  			<div class="column">
-  				
-  			
-  		<nav id="dl-menu" class= "dl-menuwrapper">
-  			<button class="dl-trigger">Open Menu </button>
-    		<ul class="dl-menu">
-    			<li><a href="#"><i class="fa fa-home"> </i> Home </a></li>
-    			<li><a href="#"><i class="fa fa-music"> </i> Discography </a>
-    				<ul class="dl-submenu">
-    					<li>
-    						<a href="#"><i class="fa fa-headphones"></i>Compilations</a>
-    					
-    							<ul class="dl-submenu">
-    								
-    								<li><a href="#">Hydeout Productions 1st Collection</a></li>
-    								<li><a href="#">Hydeout Productions 2nd Collection</a></li>
-    							</ul>
-    					</li>
-    						<li>
-    						<a href="#"><i class="fa fa-headphones"></i>Studio Albums</a>
-    						
-										<ul class="dl-submenu">
-											
-											<li><a href="#">Metaphorical Music</a></li>
-											<li><a href="#">Modal Soul</a></li>
-											<li><a href="#">Spiritual State</a></li>
-										</ul>
-    					</li>
-    					<li>
-							<a href="#"<i class="fa fa-headphones"></i>Samurai Champloo Soundtrack</a>
-								
-										<ul class="dl-submenu">
-											<li><a href="#">Departure</a></li>
-											<li><a href="#">Impression</a></li>
-										</ul>
-						</li>
-						</ul>
-					</li>
-    			<li><a href="#"><i class="fa fa-heart" ></i> Fans </a></li>
-    			<li><a href="#"><i class="fa fa-info"></i> Resources </a></li>
-    			<li><a href="#"><i class="fa fa-envelope"> </i> Contact </a></li>
-    			
-    		</ul>
-    			</nav>
-    		</div> <!--column -->
-    	</div> <!--clearfix -->
-   </div> <!--container-->
+    <div>
+			
+			
+				<header>
+				<div class = "navbar navbar-inverse navbar-static-top">
+					<div class="container">
+						
+							
+							<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+ 								<i class = "fa fa-bars fa-lg"></i>
+ 							 </button> 
+ 							 <a href="index.html" class="navbar-brand"><img src="" alt="Nujabes Logo"></a> 
+					<div class = "collapse navbar-collapse navHeaderCollapse">
+  						<ul class = "nav navbar-nav navbar-right">
+  						 <li class="active"><a href = "index.html"><i class="fa fa-home"></i> Home</a></li>
+   							<li><a href = "bio.html"><i class="fa fa-smile-o"></i> Biography</a></li>
+  						<li><a href = "discography.html"><i class="fa fa-music"></i> Discography</a></li>
+ 						 <li ><a href="#"><i class="fa fa-heart" ></i> Fans </a></li>
+    					<li ><a href="#"><i class="fa fa-info"></i> Resources </a></li>
+    					<li ><a href="#"><i class="fa fa-envelope"> </i> Contact Us </a></li>
+  						
+       					</ul>
+    				 </div><!--navbar collapse-->
+					</div><!--container-->
+				  
+    			</div> <!--navbar static -->
+    </div><!--outer-->
+			</header>
+      
+			<div id="wrapper">
+				<div class="audioplayer">
+				<audio preload="metadata" controls style="width: 0; height:0; visibility: hidden;"
+					<source src="_audio/metaphor_music/Beat Laments the World.wav"> </source>
+					<source src="_audio/metaphor_music/Beat Laments the World.mp3"> </source>
+					<source src="_audio/metaphor_music/Beat Laments the World.ogg"> </source>
+				</audio>
+				<div class="audioplayer-playpause" title="Play">
+					<a href="#">Play</a>
+				</div>
+				<div class="audioplayer-time audioplayer-time-current">00:00</div>
+				<div class="audioplayer-bar">
+					<div class="audioplayer-bar-loaded" style="width: 100.00000060757905%;"></div>
+					<div class="audioplayer-bar-played" style="width: 12.687914355563068%;"></div>
+				</div>
+				<div class="audioplayer-time audioplayer-time-duration">04:53</div>
+				<div class="audioplayer-volume">
+					<div class="audioplayer-volume-button" title="volume">
+						<a href="#"></a>
+					</div>
+					<div class="audioplayer-volume-adjust">
+						<div style="height: 100%;"> </div>
+					</div>
+				</div>
+				</div>
+		</div>
+    	
+    	
+    		
+    		
+    		
+    		
+    
+    
+			<div class="jumbotron jumbotron-ad">
+				<div class="container">
+			<h1>NUJABES</h1>
+			<img id="logo" class="hidden-sm"  src="_images/imgres-1.jpg" alt="nujabes logo" title="nujabes logo">
+			</div><!--container-->
+			</div><!--jumbotron-->
    
-   
-    </header>
+    
     
     
     <article id="main">	
 
-    <img id="logo" class="hidden-sm"  src="_images/imgres-1.jpg" alt="nujabes logo" title="nujabes logo">
     
     
-    <h1> Nujabes </h1>
+    
+    
    
    </article>
    
@@ -139,17 +140,7 @@
 		</div> <!--main div-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     
-    <script src="js/jquery.dlmenu.js"></script>
-    <script>
-			$(function() {
-				$( '#dl-menu' ).dlmenu({
-					animationClasses : { classin : 'dl-animate-in-5', classout : 'dl-animate-out-5' }
-				});
-			});
-		</script>
-    
-    
-    <script src="js/custom.js"></script>
+     
     <!-- Include all compiled plugins (below), or include individual files as needed -->
       
     
