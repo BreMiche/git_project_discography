@@ -11,15 +11,24 @@
     <!-- My Styles -->
     <link href="_css/bootstrap.min.css" rel="stylesheet">
     <link href="_css/custom.css" rel="stylesheet">
-  	<link href="_css/audioplayer.css" rel="stylesheet">
   	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    
-    
+		<link rel="stylesheet" href="_css/audioplayer.css" />
+	
     <!--Scripts-->
-   <script src="js/jquery.js"></script>
-    <script src="js/audioplayer.js"></script>
-    	<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script><script src="js/bootstrap.min.js"></script>
+   
+    
+  	
+	<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+	<script>
+	$( 'audio' ).audioPlayer(
+{
+    classPrefix: 'player', // default value: 'audioplayer'
+    strPlay: 'Play', // default value: 'Play'
+    strPause: 'Pause', // default value: 'Pause'
+    strVolume: 'Volume', // default value: 'Volume'
+}); 
+		</script>
+   
     
  	
 
@@ -52,9 +61,9 @@
   						 <li class="active"><a href = "index.html"><i class="fa fa-home"></i> Home</a></li>
    							<li><a href = "bio.html"><i class="fa fa-smile-o"></i> Biography</a></li>
   						<li><a href = "discography.html"><i class="fa fa-music"></i> Discography</a></li>
- 						 <li ><a href="#"><i class="fa fa-heart" ></i> Fans </a></li>
-    					<li ><a href="#"><i class="fa fa-info"></i> Resources </a></li>
-    					<li ><a href="#"><i class="fa fa-envelope"> </i> Contact Us </a></li>
+ 						 <li ><a href="fans.html"><i class="fa fa-heart" ></i> Fans </a></li>
+    					<li ><a href="resources.html"><i class="fa fa-info"></i> Resources </a></li>
+    					<li ><a href="contact.html"><i class="fa fa-envelope"> </i> Contact Us </a></li>
   						
        					</ul>
     				 </div><!--navbar collapse-->
@@ -65,31 +74,13 @@
 			</header>
       
 			<div id="wrapper">
-				<div class="audioplayer">
-				<audio preload="metadata" controls style="width: 0; height:0; visibility: hidden;"
-					<source src="_audio/metaphor_music/Beat Laments the World.wav"> </source>
+				<audio preload="metadata" controls>
 					<source src="_audio/metaphor_music/Beat Laments the World.mp3"> </source>
 					<source src="_audio/metaphor_music/Beat Laments the World.ogg"> </source>
+					<source src="_audio/metaphor_music/Beat Laments the World.wav"> </source>
 				</audio>
-				<div class="audioplayer-playpause" title="Play">
-					<a href="#">Play</a>
-				</div>
-				<div class="audioplayer-time audioplayer-time-current">00:00</div>
-				<div class="audioplayer-bar">
-					<div class="audioplayer-bar-loaded" style="width: 100.00000060757905%;"></div>
-					<div class="audioplayer-bar-played" style="width: 12.687914355563068%;"></div>
-				</div>
-				<div class="audioplayer-time audioplayer-time-duration">04:53</div>
-				<div class="audioplayer-volume">
-					<div class="audioplayer-volume-button" title="volume">
-						<a href="#"></a>
-					</div>
-					<div class="audioplayer-volume-adjust">
-						<div style="height: 100%;"> </div>
-					</div>
-				</div>
-				</div>
-		</div>
+				
+			</div>
     	
     	
     		
@@ -121,13 +112,13 @@
 			
 			<div id="footer">
 				<div class="container">
-				  <a class="btn btn-primary" href="#"> <i class="fa fa-facebook-square fa-2x" alt="facebook" title="facebook">  </i></a>
+				  <a class="btn btn-primary" href="https://www.facebook.com/pages/Nujabes/38555751608"> <i class="fa fa-facebook-square fa-2x" alt="facebook" title="facebook">  </i></a>
 							
 						
-							<a class="btn btn-info " href="#"> <i class="fa fa-twitter-square fa-2x" alt="twitter" title="twitter">  </i></a>
+							<a class="btn btn-info " href="https://twitter.com/Nujabes_Sama"> <i class="fa fa-twitter-square fa-2x" alt="twitter" title="twitter">  </i></a>
 						
 						
-							<a class="btn btn-danger " href="#"> <i class="fa fa-google-plus fa-2x" alt="google-plus" title="google-plus">  </i></a>
+							<a class="btn btn-danger " href="https://plus.google.com/110843445006547098766/posts"> <i class="fa fa-google-plus fa-2x" alt="google-plus" title="google-plus">  </i></a>
 			
 			
 					<p class="text-muted"> 
@@ -139,7 +130,15 @@
 			</div>
 		</div> <!--main div-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/audioplayer.min.js"></script>
+	<script>
+	$( function()
+	{
+		$( 'audio' ).audioPlayer();
+	});
+</script>
      
     <!-- Include all compiled plugins (below), or include individual files as needed -->
       
