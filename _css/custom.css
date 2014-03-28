@@ -537,19 +537,9 @@ url('../_fonts/29FB7D_1_0.ttf') format('truetype');}
 	color: #89867e;
 }
 
-
-
 /* ===================================SIDEBAR==================================*/
 /* ===================================MAINCONTENT==============================*/
-body, html { font-size: 100%; 	padding: 0; margin: 0;}
 
-/* Reset */
-*,
-*:after,
-*:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
 }
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
