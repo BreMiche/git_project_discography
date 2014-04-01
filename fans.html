@@ -13,31 +13,45 @@
 
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 	<!--Styles-->
-	<link href="_css/bootstrap.min.css" rel="stylesheet">
+	 <link href="_css/bootstrap.min.css" rel="stylesheet">
     <link href="_css/custom.css" rel="stylesheet">
   	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="_css/audioplayer.css" />
+	
+  	
+  	<!--Scripts-->
+  	<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+	<script>
+	$( 'audio' ).audioPlayer(
+{
+    classPrefix: 'player', // default value: 'audioplayer'
+    strPlay: 'Play', // default value: 'Play'
+    strPause: 'Pause', // default value: 'Pause'
+    strVolume: 'Volume', // default value: 'Volume'
+}); 
+		</script>
 	</head>
 
 	<body>
 		 <div>
 			
 			
-				<header>
-				<div class = "navbar navbar-inverse navbar-static-top">
+				<nav>
+				<div class= "navbar navbar-inverse navbar-static-top">
 					<div class="container">
 						
 							
-							<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
- 								<i class = "fa fa-bars fa-lg"></i>
+							<button class= "navbar-toggle" data-toggle= "collapse" data-target= ".navHeaderCollapse">
+ 								<i class= "fa fa-bars fa-lg"> </i>
  							 </button> 
- 							 <a href="index.html" class="navbar-brand"><img src="" alt="Nujabes Logo"></a> 
-					<div class = "collapse navbar-collapse navHeaderCollapse">
-  						<ul class = "nav navbar-nav navbar-right">
-  						 <li class="active"><a href = "index.html"><i class="fa fa-home"></i> Home</a></li>
-   							<li><a href = "bio.html"><i class="fa fa-smile-o"></i> Biography</a></li>
-  						<li><a href = "discography.html"><i class="fa fa-music"></i> Discography</a></li>
- 						 <li class="active"><a href="fans.html"><i class="fa fa-heart" ></i> Fans </a></li>
-    					<li ><a href="resources.html"><i class="fa fa-info"></i> Resources </a></li>
+ 							 <a href="index.html" class="logo"><img src="_images/hydeout.png"  alt="Nujabes Logo"> Nujabes </a> 
+					<div class= "collapse navbar-collapse navHeaderCollapse">
+  						<ul class= "nav navbar-nav navbar-right">
+  						 <li><a href = "index.html"><i class="fa fa-home"> </i> Home</a></li>
+   							<li><a href = "bio.html"><i class="fa fa-smile-o"> </i> Biography</a></li>
+  						<li><a href = "discography.html"><i class="fa fa-music"> </i> Discography</a></li>
+ 						 <li class="active"><a href="fans.html"><i class="fa fa-heart" > </i> Fans </a></li>
+    					<li ><a href="resources.html"><i class="fa fa-info"> </i> Resources </a></li>
     					<li ><a href="contact.html"><i class="fa fa-envelope"> </i> Contact Us </a></li>
   						
        					</ul>
@@ -46,13 +60,110 @@
 				  
     			</div> <!--navbar static -->
     </div><!--outer-->
-			</header>
-      <div class="jumbotron jumbotron-ad">
-				<div class="container">
-			<h1>FAN ART</h1>
-			<img id="logo" class="hidden-sm"  src="_images/imgres-1.jpg" alt="nujabes logo" title="nujabes logo">
+			</nav>
+			
+      <div class="widewrapper main">
+				<img src="_images/main_tribute.jpg" class="img-responsive" alt="main-tribute" title="beat laments the world">
+					
+			
+			<h1>FANS</h1>
 			</div><!--container-->
-			</div><!--jumbotron-->
+			
+			
+			<div id="wrapper">
+				<h2> Esbe &and; Jenova 7 - Haiku (Nujabes Tribute)</h2>
+				<audio preload="metadata" controls>
+					<source src="_audio/Esbe & Jenova 7 - Haiku (Nujabes Tribute).mp3"> </source>
+					<source src="_audio/Esbe & Jenova 7 - Haiku (Nujabes Tribute).ogg"> </source>
+					<source src="_audio/Esbe & Jenova 7 - Haiku (Nujabes Tribute) (1).wav"> </source>
+				</audio>
+				
+			</div>
+			
+			
+			<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img class="img-responsive" src="_images/446319.jpg" style="width: 300px; height:200px;" alt="recording">
+						<div class="caption">
+							<h3> </h3>
+						</div>
+					</div>
+				</div>
+						
+				
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img class="img-responsive" src="_images/beats.jpeg" style="width: 300px; height:200px;" alt="beats">
+						<div class="caption">
+							<h3> </h3>
+						</div>
+					</div>
+				</div>
+			
+			
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img class="img-responsive" src="_images/peaceland.jpg" style="width: 300px; height:200px;" alt="peaceland">
+						<div class="caption">
+							<h3> </h3>
+						</div>
+					</div>
+				</div>
+			
+			
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img class="img-responsive" src="_images/wings.jpeg" style="width: 300px; height:200px;" alt="wings">
+						<div class="caption">
+							<h3> </h3>
+						</div>
+					</div>
+				</div>
+			
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img class="img-responsive" src="_images/another_spiritual.jpg" style="width: 300px; height:200px;" alt="recording">
+						<div class="caption">
+							<h3> </h3>
+						</div>
+					</div>
+				</div>
+			
+			
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img class="img-responsive" src="_images/clouds.jpg" style="width: 300px; height:200px;" alt="clouds">
+						<div class="caption">
+							<h3> </h3>
+						</div>
+					</div>
+				</div>
+			
+			
+			
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img class="img-responsive" src="_images/another_reflection.jpg" style="width: 300px; height:200px;" alt="reflection">
+						<div class="caption">
+							<h3> </h3>
+						</div>
+					</div>
+				</div>
+			
+			
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img class="img-responsive" src="_images/tribute1.jpg" style="width: 300px; height:200px;" alt="tribute">
+						<div class="caption">
+							<h3> </h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div> <!--container-fluid-->
 			<footer>
 				<div id="footer">
 				<div class="container">
@@ -77,5 +188,13 @@
 		</div>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/audioplayer.min.js"></script>
+	<script>
+	$( function()
+	{
+		$( 'audio' ).audioPlayer();
+	});
+</script>
+     
 	</body>
 </html>
