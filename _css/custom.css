@@ -642,6 +642,7 @@ a:hover {
 }
 
 #wrapper {
+	width: 100%;
 	margin: 0 auto;
 	max-width: 350px;
 	padding-top: 2em;
