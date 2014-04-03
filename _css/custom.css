@@ -541,6 +541,7 @@ url('../_fonts/29FB7D_1_0.ttf') format('truetype');}
 /* ===================================SIDEBAR==================================*/
 /* ===================================MAINCONTENT==============================*/
 
+.show {
 }
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
