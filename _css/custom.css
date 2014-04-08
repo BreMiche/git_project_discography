@@ -164,7 +164,6 @@ a:hover {
 
 h1 {
     font-size: 2em;
-    margin: 0.67em 0;
     margin: .5em;
 }
 
@@ -488,23 +487,21 @@ url('../_fonts/29FB7D_1_0.ttf') format('truetype');}
 .codrops-top {
 	background: #fff;
 	background: rgba(255, 255, 255, 0.95);
-	text-transform: uppercase;
-	position: relative;
-	font-size: 0.68em;
 	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
 	font-size: 0.68em;
 	line-height: 2.2;
 	text-transform: uppercase;
 	position: relative;
+	
 }
 
 .codrops-top a {
-	padding: 0 1em;
-	letter-spacing: 0.1em;
 	color: #333;
 	display: inline-block;
 	letter-spacing: 0.1em;
 	padding: 0 1em;
+	
+	
 }
 
 .codrops-top a:hover {
@@ -517,28 +514,27 @@ url('../_fonts/29FB7D_1_0.ttf') format('truetype');}
 }
 
 .codrops-top span.right a {
-	float: left;
 	display: block;
 	float: left;
+	
 }
 
 /* Demo Buttons Style */
 .codrops-demos {
-	padding-top: 1em;
 	font-size: 0.9em;
 	padding-top: 1em;
+	
 }
 
 .codrops-demos a {
-	display: inline-block;
-	margin: 0.5em;
-	padding: 0.7em 1.1em;
 	border: 3px solid #b1aea6;
 	color: #b1aea6;
 	display: inline-block;
 	font-weight: 700;
 	margin: 0.5em;
 	padding: 0.7em 1.1em;
+	
+	
 }
 
 .codrops-demos a:hover,
@@ -548,38 +544,31 @@ url('../_fonts/29FB7D_1_0.ttf') format('truetype');}
 	color: #89867e;
 }
 
+
+
 /* ===================================SIDEBAR==================================*/
-/* ===================================MAINCONTENT==============================*/
 
 .show {
 	color: #000;
 	font-family: "OratorSTD", Helvetica, sans-serif;
 }
 
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before,
-.clearfix:after {
-	content: " ";
-	display: table;
 aside img {
 	margin: 1em;
 }
 
-.clearfix:after {
-	clear: both;
 #right {
 	margin: 0 0 1% 0;
 	padding-bottom: 4em;
 }
 
-
 /* ===================================MAINCONTENT==============================*/
 html {
 	min-height: 100%;
 	position: relative;
+	
+}
 body {
-	font-family: 'Lato', Calibri, Arial, sans-serif;
-	color: #b1aea6;
 	background: #fffcf5;
 	color: #b1aea6;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
@@ -591,38 +580,43 @@ h1, h2 {
 	font-family: 'TkachenkoSketch4F', Helvetica, sans-serif;
 	margin: 0 auto;
 	}
+
 h1 {
 	color: black;
 	font-size: 4em;	
+}
 
 h2 {
 	font-size: 3em;
 }
+
 .label1 {
 	color: #C6970D;
 }
+		
 p {
 	color: #000;
 	font-family: "OratorSTD", Helvetica, sans-serif;
 	font-size: 1em;
+		
+}
+
 a {
-	color: #ccc;
 	font-family: "OratorSTD", Helvetica, sans-serif;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #fff;
 	color: #C6970D;
 	text-decoration: none;
 }
 
 .main,
 .container > header {
-	width: 100%;
 	margin: 0 auto;
 	padding: 0 1.875em 3.125em 1.875em;
 	width: 100%;
+	
 }
 
 .main {
@@ -632,17 +626,14 @@ a:hover {
 
 .column {
 	float: left;
-	width: 50%;
-	padding: 0 2em;
 	min-width: 320px;
 	position: relative;
-}
 	padding: 0 2em;
 	width: 50%;
+	
 	}
 
 .column:nth-child(2) {
-	min-height: 400px;
 	box-shadow: -1px 0 0 rgba(0,0,0,0.1);
 	background: url(../images/clickhere.png) 90px 0 no-repeat;
 	min-height: 400px;
@@ -652,31 +643,28 @@ a:hover {
 .column:last-child:before {
 	background: #ceccc6;
 	content: '';
-	position: absolute;
 	height: 7px;
-	background: #ceccc6;
-	top: 100px;
 	position: absolute;
 	left: 10px;
 	top: 100px;
+	
 }
 
 .column p {
 	font-weight: 300;
 	font-size: 2em;
-	padding: 0;
 	line-height: 1.5;
 	margin: 0;
 	padding: 0;
 	text-align: right;
-	line-height: 1.5;
+	
 }
 
 .container > header {
 	background: rgba(0,0,0,0.01);
 	padding: 2.875em 1.875em 2.875em;
 	text-align: center;
-	background: rgba(0,0,0,0.01);
+	
 }
 
 .container > header h1 {
@@ -685,18 +673,15 @@ a:hover {
 	font-size: 2.625em;
 	line-height: 1.3;
 	margin: 0;
-	color: #89867e;
-	font-weight: 300;
+	
 }
 
 .container > header span {
 	color: #ceccc6;
 	display: block;
 	font-size: 60%;
-	color: #ceccc6;
 	padding: 0 0 0.6em 0.1em;
 }
-
 
 #main {
 	margin: 10px; 
@@ -705,11 +690,9 @@ a:hover {
 }
 
 #wrapper {
-	width: 100%;
+	
 	max-width: 600px;
 	margin: 0 auto;
-	max-width: 350px;
-	padding-top: 2em;
 	position: relative;
 	padding-bottom: 10em;
 	width: 100%;
@@ -880,7 +863,7 @@ a:hover {
 	padding: 2em 30px;
 }
 
-		
+
 #left {
 	float: left;
 	padding-left: 4em;
@@ -1050,7 +1033,6 @@ label {
 		#wrapper {
 			margin: 0 auto;
 			width: 100%;
-	
 
 
 }
@@ -1084,7 +1066,6 @@ label {
 		width: 100%;
 	
 }
-@media  screen (min-width: 993px) and (max-width: 1024px) {
 
 	.innerPlus {
 		padding-top: 4em;
@@ -1111,7 +1092,6 @@ label {
 	
 }
 
-@media  screen (max-width: 1680px) {
 @media (min-width: 993px) and (max-width: 1024px) {
 	
 	.row-1 {
