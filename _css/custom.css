@@ -492,7 +492,10 @@ url('../_fonts/29FB7D_1_0.ttf') format('truetype');}
 	position: relative;
 	font-size: 0.68em;
 	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+	font-size: 0.68em;
 	line-height: 2.2;
+	text-transform: uppercase;
+	position: relative;
 }
 
 .codrops-top a {
@@ -500,6 +503,8 @@ url('../_fonts/29FB7D_1_0.ttf') format('truetype');}
 	letter-spacing: 0.1em;
 	color: #333;
 	display: inline-block;
+	letter-spacing: 0.1em;
+	padding: 0 1em;
 }
 
 .codrops-top a:hover {
@@ -514,12 +519,14 @@ url('../_fonts/29FB7D_1_0.ttf') format('truetype');}
 .codrops-top span.right a {
 	float: left;
 	display: block;
+	float: left;
 }
 
 /* Demo Buttons Style */
 .codrops-demos {
 	padding-top: 1em;
 	font-size: 0.9em;
+	padding-top: 1em;
 }
 
 .codrops-demos a {
@@ -528,7 +535,10 @@ url('../_fonts/29FB7D_1_0.ttf') format('truetype');}
 	padding: 0.7em 1.1em;
 	border: 3px solid #b1aea6;
 	color: #b1aea6;
+	display: inline-block;
 	font-weight: 700;
+	margin: 0.5em;
+	padding: 0.7em 1.1em;
 }
 
 .codrops-demos a:hover,
@@ -542,6 +552,8 @@ url('../_fonts/29FB7D_1_0.ttf') format('truetype');}
 /* ===================================MAINCONTENT==============================*/
 
 .show {
+	color: #000;
+	font-family: "OratorSTD", Helvetica, sans-serif;
 }
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -549,29 +561,60 @@ url('../_fonts/29FB7D_1_0.ttf') format('truetype');}
 .clearfix:after {
 	content: " ";
 	display: table;
+aside img {
+	margin: 1em;
 }
 
 .clearfix:after {
 	clear: both;
+#right {
+	margin: 0 0 1% 0;
+	padding-bottom: 4em;
 }
 
 
+/* ===================================MAINCONTENT==============================*/
 html {
+	min-height: 100%;
+	position: relative;
 body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	color: #b1aea6;
 	background: #fffcf5;
+	color: #b1aea6;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
 	min-height: 982px;
 }
 
 
+h1, h2 { 
+	font-family: 'TkachenkoSketch4F', Helvetica, sans-serif;
+	margin: 0 auto;
+	}
+h1 {
+	color: black;
+	font-size: 4em;	
+
+h2 {
+	font-size: 3em;
+}
+.label1 {
+	color: #C6970D;
+}
+p {
+	color: #000;
+	font-family: "OratorSTD", Helvetica, sans-serif;
+	font-size: 1em;
 a {
 	color: #ccc;
+	font-family: "OratorSTD", Helvetica, sans-serif;
 	text-decoration: none;
 }
 
 a:hover {
 	color: #fff;
+	color: #C6970D;
+	text-decoration: none;
 }
 
 .main,
@@ -579,6 +622,7 @@ a:hover {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 1.875em 3.125em 1.875em;
+	width: 100%;
 }
 
 .main {
@@ -593,38 +637,51 @@ a:hover {
 	min-width: 320px;
 	position: relative;
 }
+	padding: 0 2em;
+	width: 50%;
+	}
 
 .column:nth-child(2) {
 	min-height: 400px;
 	box-shadow: -1px 0 0 rgba(0,0,0,0.1);
 	background: url(../images/clickhere.png) 90px 0 no-repeat;
+	min-height: 400px;
+	
 }
 
 .column:last-child:before {
+	background: #ceccc6;
 	content: '';
 	position: absolute;
 	height: 7px;
 	background: #ceccc6;
 	top: 100px;
+	position: absolute;
 	left: 10px;
+	top: 100px;
 }
 
 .column p {
 	font-weight: 300;
 	font-size: 2em;
 	padding: 0;
+	line-height: 1.5;
 	margin: 0;
+	padding: 0;
 	text-align: right;
 	line-height: 1.5;
 }
 
 .container > header {
+	background: rgba(0,0,0,0.01);
 	padding: 2.875em 1.875em 2.875em;
 	text-align: center;
 	background: rgba(0,0,0,0.01);
 }
 
 .container > header h1 {
+	color: #89867e;
+	font-weight: 300;
 	font-size: 2.625em;
 	line-height: 1.3;
 	margin: 0;
@@ -633,6 +690,7 @@ a:hover {
 }
 
 .container > header span {
+	color: #ceccc6;
 	display: block;
 	font-size: 60%;
 	color: #ceccc6;
@@ -642,38 +700,348 @@ a:hover {
 
 #main {
 	margin: 10px; 
+	padding-bottom: 4em;
 	text-align: center;
 }
 
 #wrapper {
 	width: 100%;
+	max-width: 600px;
 	margin: 0 auto;
 	max-width: 350px;
 	padding-top: 2em;
 	position: relative;
+	padding-bottom: 10em;
 	width: 100%;
 }
 
-/* +++++++++++++++++++++PAGES+++++++++++++++++++++*/
+.album {
+	
+	text-align: center;	
+}
+
+.album img {
+	box-shadow: 3px 3px 3px #000;
+	height: 180px;
+	margin: 20px;
+	padding-bottom: 10px;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	width: 180px;
+}
+
+.album img:hover {
+	-webkit-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+
+	-ms-transform: scale(1.5);
+
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-box-shadow: 3px 3px 3px #000;
+		-moz-box-shadow: 3px 3px 3px #000;
+
+	box-shadow: 3px 3px 3px #000;
+	-webkit-backface-visibility: hidden;
 
 }
 
 
-/* ++++++++++++++++++++PLAYLISTS++++++++++++++++++*/
+.inner {
+	float: left;
+}
 
-		
+
+.info {
+	background: #F1F1D4;
+	height: 107px;
+	padding: 10px;
+	width: 280px;
+}
+
+
+	
+/* +++++++++++++++++++++PAGES+++++++++++++++++++++*/
+
+.statement {
+	line-height: 1.5em;
+	font-size: 10em;
+	text-align: center;
+	
+}
+
+.logo {
+	color: #84BAD2;
+	float: left;
+	font-family: 'TkachenkoSketch4F', Helvetica, sans-serif;
+	margin-left: -15px;
+	text-align: center;
+	
+	
+}
+#logo {
+	margin: 0 auto;
+	padding-top: 9em;
+}
+
+#title {
+	
+	margin: 0 auto;
+	
+}
+
+#bg {
+	height: 200%;
+	left: -50%;
+	position: fixed;
+	top: -50%;
+	width: 200%;
+	z-index: -1;
+	
+}
+
+#bg img {
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	min-width: 50%;
+	min-height: 50%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	
+	
+}
+
+.picture {
+	height: 200px;
+	box-shadow: 3px 3px 3px #000;
+	margin: 20px;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	width: 300px;
+}
+
+.picture:hover {
+	
+	-webkit-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+
+	-ms-transform: scale(1.5);
+
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-box-shadow: 3px 3px 3px #000;
+		-moz-box-shadow: 3px 3px 3px #000;
+
+	box-shadow: 3px 3px 3px #000;
+	-webkit-backface-visibility: hidden;
+	
+}
+
+.cover {
+	
+	margin-top: 18em;
+}
+
+.widewrapper {
+	width: 100%;
+	
+}
+
+.widewrapper img {
+	width: 100;
+}
+
+.shift {
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	transition-property: height, width;
+}
+
+.shift .shift-item {
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property: -moz-transform, opacity;
+	transition-property: transform, opacity;
+}
+.shift-item {
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+}
+
+
 .container-fluid {
 	
+	padding: 2em 30px;
+}
 
 		
+#left {
+	float: left;
+	padding-left: 4em;
+
+}
+
+
+
+.banner {
+	
+	clear: both;
+	height: 350px;
+	width: 100%;
+}
+
+
+.row-2 {
+	padding-bottom: 8em;
+}
+
+.order {
+	font-size: 1.5em;
+	list-style: none;
+	
+}
+
+.box {
+	background: #fffcf5;
+	box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
+	height: 100%;
+	min-height: 330px;
+	padding: 2em;
+	
+	
+}
+
+#signUp {
+	background: #fffcf5;
+	display: block;
+	position: relative;
+	padding-top: 2em;
+	min-height: 330px;
+}
+
+
+.icon {
+	margin: 0 auto;
+	position: relative;
+	padding-left: 3.5em; 
+}
+
+
+.long {
+	width: 250px;
+}
+
+.short {
+	20px;
+}
+
+label {
+	color: #000;
+	display: block;
+	font-family: "OratorSTD", Helvetica, sans-serif;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	
+}
+
+.send {
+	border:1px solid #d02718;
+	display:inline-block;
+	font-family: 'LithosPro-Regular', Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:65px;
+	line-height:50px;
+	text-indent:0px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #810e05;
+	width:131px;
+	
+}
+.send:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
+	background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+	background-color:#c62d1f;
+	
+}.send:active {
+	position:relative;
+	top:1px;
+}
 /* ++++++++++++++++++++PLAYLISTS++++++++++++++++++*/
+
+
+.clearfix {
+	clear: both;
+}
+
+.albumTitle {
+	border-bottom: #fff 1px solid;
+	display: block;
+	font-family: 'LithosPro-Regular', Helvetica, sans-serif;
+	font-size: 24px;
+	padding-bottom: 3px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	white-space: nowrap;
+	-webkit-font-smoothing: antialiased;
+	
+}
+
+.playlist {
+	color: #000;
+	display: block;
+	float: left;
+	height: auto;
+	font-style: italic;
+	font-size: 16px;
+	width: 300px;
+}
+
+.playlistInner {
+	padding: 20px;
+}
+
+
+.innerBottom {
+	padding-bottom: 6.5em;
+}
+
+.tracks {
+	list-style: decimal;
+	padding-left: 20px;
 	
 }
 
 /* ====================================FOOTER===================================*/
+
+
 .social {
+	float: right;
 	padding-left: 25px;
 	padding-right: 18px;
+	
+}
+
+#sticky {
+	background-color: #000;
+	bottom: 0;
+	height: auto;
+	left: 0;
+	position: absolute;
+	right: 0;
+	width: 100%;
+}
+
 /* ====================================MEDIA QUERIES=============================*/
 
 
@@ -686,19 +1054,107 @@ a:hover {
 
 
 }
+		.statement {
+			font-size: 4em;
+			padding-bottom: 1em;
+		}
+
+		#left {
+			padding-bottom: 3em;
+		}
+		#right {
+			padding-bottom: 12em;
+		}
+		
 }
 
+@media (min-width: 631px) and (max-width: 930px ) {
 	
+	a {
+		font-size: .9em;
+}
+	
+	.coverPlus {
+		margin-top: 8.1em;
+	}
+	
+	.bg, .bg1 {
+	
+		min-width: 100%;
+		width: 100%;
+	
+}
+@media  screen (min-width: 993px) and (max-width: 1024px) {
+
+	.innerPlus {
+		padding-top: 4em;
+}
+	.statement {
+		font-size: 8em;
+		line-height: 1em;
+	}
+
+}
+
+@media (min-width: 931px)  and (max-width: 992px){
+	
+	.innerPlus {
+		padding-top: 3.8em;
+		
+	}
+	
+	.innerDouble {
+		padding-left: 5em;
 	}
 	
 	
 	
 }
-@media  screen (min-width: 993px) and (max-width: 1024px) {
+
+@media  screen (max-width: 1680px) {
+@media (min-width: 993px) and (max-width: 1024px) {
+	
+	.row-1 {
+		margin: 0 auto;
+	}
+	
+	.innerPlus {
+		padding-top: 4em;
+	}
+	.innerDouble {
+		padding-left: 5em;
+	}
+	
+	.inner3 {
+		padding-left: 10em;
+	}
 	
 	
 }
 
-@media  screen (max-width: 1680px) {
+@media (min-width: 1025px)  {
+	
+	.row-1 {
+		margin: 0 auto;
+	}
+	
+	.innerPlus {
+		padding-top: 4em;
+	}
+	
+	.innerDouble {
+		padding-left: 6em;
+	}
+	
+	.inner3 {
+		padding-left: 12em;
+	}
+	
+	#left {
+		font-size: 1.5em;
+	}
+	.tracks-lg {
+		font-size: 1.5em;
+	}
 }
 
