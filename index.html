@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Discography Website- Nujabes</title>
 
@@ -10,7 +9,7 @@
     
     <!-- My Styles -->
     <link href="_css/bootstrap.min.css" rel="stylesheet">
-    <link href="_css/custom.css" rel="stylesheet">
+    <link href="_css/custom.min.css" rel="stylesheet">
   	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 		<link rel="stylesheet" href="_css/audioplayer.css" />
 	
@@ -70,19 +69,21 @@
 					</div><!--container-->
 				  
     			</div> <!--navbar static -->
+    			</nav>
     </div><!--outer-->
-			</nav>
 			
+			
+			<img id="logo" src="_images/hydeout-lg.png" class="img-responsive" alt="logo">
       		<img id="title" src="_images/Nujabes_Title.png" class="img-responsive" alt="Title">
-      		<div id="bg">
-      		<img src="_images/pic4.jpg" alt="homepage">
-      		</div>
+      		<section id="bg">
+      		<img src="_images/watercolor.jpg" alt="homepage">
+      		</section>
      	
 			
 			
 			
 			<div id="wrapper">
-				<h2> Beat Laments the World- Metaphorical Music </h2>
+				<h2 class="label1"> Beat Laments the World- Metaphorical Music </h2>
 				<audio preload="metadata" controls>
 					<source src="_audio/metaphor_music/Beat Laments the World.mp3"> </source>
 					<source src="_audio/metaphor_music/Beat Laments the World.ogg"> </source>
@@ -93,15 +94,16 @@
     	
     	
 			
+			<footer id="sticky">
 				<div class="container">
-					<div class="social">
-				  <a class="btn btn-primary" href="https://www.facebook.com/pages/Nujabes/38555751608"> <i class="fa fa-facebook-square fa-2x" alt="facebook" title="facebook">  </i></a>
+				 <div class="social">
+				  <a class="btn btn-primary" href="https://www.facebook.com/pages/Nujabes/38555751608"> <i class="fa fa-facebook-square fa-2x" title="facebook">  </i></a>
 							
 						
-							<a class="btn btn-info " href="https://twitter.com/Nujabes_Sama"> <i class="fa fa-twitter-square fa-2x" alt="twitter" title="twitter">  </i></a>
+							<a class="btn btn-info " href="https://twitter.com/Nujabes_Sama"> <i class="fa fa-twitter-square fa-2x" title="twitter">  </i></a>
 						
 						
-							<a class="btn btn-danger " href="https://plus.google.com/110843445006547098766/posts"> <i class="fa fa-google-plus fa-2x" alt="google-plus" title="google-plus">  </i></a>
+							<a class="btn btn-danger " href="https://plus.google.com/110843445006547098766/posts"> <i class="fa fa-google-plus fa-2x" title="google-plus">  </i></a>
 					</div>
 			
 					<p class="text-muted"> 
@@ -109,10 +111,10 @@
 						
 					
 						 &copy; Site by Bre Miche. All music is the sole property of Hydeout Productions. Artwork is owned by their respective creators.</p>
-						
 			</div>
-			</div>
-		</div> <!--main div-->
+			
+			</footer>
+		
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

@@ -890,9 +890,13 @@ a:hover {
 	
 }
 
+
 .box {
-	background: #fffcf5;
 	box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box, .box1 {
+	background: #fffcf5;
 	height: 100%;
 	min-height: 330px;
 	padding: 2em;
@@ -909,10 +913,14 @@ a:hover {
 }
 
 
-.icon {
+.icon, .icon1 {
 	margin: 0 auto;
 	position: relative;
-	padding-left: 3.5em; 
+	padding-left: 3.5em;
+}
+
+.icon1 {
+	padding-left: 6.5em; 
 }
 
 
@@ -958,6 +966,10 @@ label {
 }.send:active {
 	position:relative;
 	top:1px;
+}
+
+p#confirm {
+	font-size: 2em;
 }
 /* ++++++++++++++++++++PLAYLISTS++++++++++++++++++*/
 
